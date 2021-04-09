@@ -70,3 +70,7 @@ jobs:
         if: success()
         run: |
           az group delete --name ${{env.AZURE_RESOURCE_GROUP}} --subscription ${{secrets.AZURE_SUBSCRIPTION_ID}} --yes
+
+jobs:
+  spin up environment:
+    runs-on: ubuntu-latest
